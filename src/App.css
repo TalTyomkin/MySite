@@ -1,0 +1,8 @@
+html{
+    background: rgb(87, 84, 104);
+}
+body{
+    background-image: url(./Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

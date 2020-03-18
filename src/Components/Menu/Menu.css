@@ -1,0 +1,57 @@
+.navContainer{
+    height: 4.5vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2vw;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: calc(4vw + 10px);
+    font-size: calc(1vw + 4.67px);
+    position: fixed;
+    color: white;
+    transition: all 700ms ease;
+    border-bottom: 0.01vw solid white;
+    padding: 0 0 2vw 0;
+}
+.menuBtn{
+    margin: 0 5vw;
+    padding: 1.55vw;
+    text-decoration: none;  
+    color: rgb(255, 255, 255);
+}
+
+.menuBtn:hover{
+    margin: 0 5vw;
+    padding: 2.3vw 1.55vw;
+    text-decoration: none;  
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 1vw rgba(255,255,255,0.3);
+}
+.menuScrolled{
+    background: rgba(55, 53, 65, 0.95);
+    border-bottom: 0;
+    padding: 0;
+}
+.menuScrolled > .menuBtn:hover{
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    margin: 0 5vw;
+    padding: 1.55vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.3);
+}
+.menuBtn:active{
+    background: rgba(214, 206, 255, 0.9);
+    color: rgba(87, 84, 104, 0.9);
+}
+.menuScrolled > .menuBtn:active{
+    background: rgba(214, 206, 255, 0.9);
+    color: rgba(87, 84, 104, 0.9);
+}
+
+
