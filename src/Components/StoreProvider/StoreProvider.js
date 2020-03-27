@@ -14,7 +14,7 @@ const StoreProvider = (props) => {
             },
             aboutMeText:<p id={"text"}>
                 Hi, everyone.<br/>
-                My name is Tal Tyomkin and in the past years, I worked as a product designer.<br/>
+                My name is Tal Tyomkin and in the past years I worked as a product designer.<br/>
                 By being a part of the "product" team, I worked alongside developers<br/>
                 and was always curious about learning the code as well.<br/>
                 Recently, I've graduated from the "Netcraft Academy" a Front-End developer course,<br/>

@@ -10,7 +10,7 @@ const Project = ({title,description,projectImg,thamnail}) => {
     return(
         <div className={"project"}>
             <button onClick={toggle} className={"projectBtn"}>
-                <img src={thamnail} className={"projectLink"}/>
+                <img src={thamnail} id={"projectLink"}/>
                 <div className={"projecDescription"}>
                     <h5 className={"descriptionTitle"}>{title}</h5>
                     {description}

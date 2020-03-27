@@ -59,10 +59,14 @@
     background: rgba(0, 0, 0, 0);
     border: 0;
 }
-#btn:active{
+#btn:active > #inIcon{
     box-shadow: 0 0 1vw rgba(255,255,255,0.3);
 }
+#btn:hover{
+    text-decoration: none;
+}
 #inIcon{
-    width: calc(3vw + 10px);;
+    width: calc(3vw + 10px);
+    border-radius: 50%;
 }
 
