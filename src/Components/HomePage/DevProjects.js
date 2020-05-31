@@ -15,14 +15,16 @@ const DevProjects = ({devProjects}) => {
                         description={devProjects.projects.dev.youtube.description}
                         projectImg={youtubeThamnail}
                         thamnail={youtubeThamnail}
+                        modalSize="xl"
                     />
                 </div>
                 <div className={"designProRight"}>
                     <Project
                         title={devProjects.projects.dev.memoryGame.title}
                         description={devProjects.projects.dev.memoryGame.description}
-                        projectImg={youtubeThamnail}
+                        project={<iframe src="https://cool-memory-game.herokuapp.com" title="Memory Game" frameborder="0" height="500vh" width="100%"></iframe>}
                         thamnail={MemoryThamnail}
+                        modalSize="xl"
                     />
                 </div>
             </div>

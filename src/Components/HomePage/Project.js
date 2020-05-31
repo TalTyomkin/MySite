@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "../HomePage/HomePageCss/Project.css";
 import { Modal, ModalBody } from 'reactstrap';
 
-const Project = ({title,description,projectImg,thamnail}) => {
+const Project = ({title,description,project,thamnail,modalSize}) => {
 
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
@@ -16,9 +16,9 @@ const Project = ({title,description,projectImg,thamnail}) => {
                     {description}
                 </div>
             </button>
-            <Modal className={"model"} isOpen={modal} toggle={toggle} size={"lg"} returnFocusAfterClose={false} >
+            <Modal className={"model"} isOpen={modal} toggle={toggle} size={modalSize} returnFocusAfterClose={false} >
                 <ModalBody className={"modelBody"}>
-                    <img src={projectImg} id={"imgWidh"}/>
+                    {project}
                 </ModalBody>
             </Modal>
         </div>

@@ -20,32 +20,36 @@ const UxUiProjects = ({uxUiProjectes}) => {
                     <Project
                         title={uxUiProjectes.projects.uxUi.design1.title}
                         description={uxUiProjectes.projects.uxUi.design1.description}
-                        projectImg={Samsung}
+                        project={<img src={Samsung} id={"imgWidh"}/>}
                         thamnail={SamaungThamnail}
+                        modalSize="lg"
                     />
                 </div>
                 <div className={"designProleft"}>
                     <Project
                         title={uxUiProjectes.projects.uxUi.design2.title}
                         description={uxUiProjectes.projects.uxUi.design2.description}
-                        projectImg={Nipendo}
+                        project={<img src={Nipendo} id={"imgWidh"}/>}
                         thamnail={NipendoThammail}
+                        modalSize="lg"
                     />
                 </div>
                 <div className={"designProRight"}>
                     <Project
                         title={uxUiProjectes.projects.uxUi.design3.title}
                         description={uxUiProjectes.projects.uxUi.design3.description}
-                        projectImg={PayKey}
+                        project={<img src={PayKey} id={"imgWidh"}/>}
                         thamnail={PayKeyThammail}
+                        modalSize="lg"
                     />
                 </div>
                 <div className={"designProleft"}>
                     <Project
                         title={uxUiProjectes.projects.uxUi.design4.title}
                         description={uxUiProjectes.projects.uxUi.design4.description}
-                        projectImg={FacebookCampaignAds}
+                        project={<img src={FacebookCampaignAds} id={"imgWidh"}/>}
                         thamnail={FacebookThammail}
+                        modalSize="lg"
                     />
                 </div>
             </div>
