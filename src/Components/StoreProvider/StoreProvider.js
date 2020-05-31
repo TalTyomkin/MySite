@@ -30,6 +30,12 @@ const StoreProvider = (props) => {
                         description:<p>In this project, I built the YouTube site.<br/>
                             I created requests for YouTube servers and pulled the content directly into my "Mongo" database.<br/>
                             The client-side was built in "React" and designed using "Style Component" (the project was built within the Netcraft curriculum).</p>,
+                    },
+                    memoryGame:{
+                        title:"Cool Memory game",
+                        description:<p>A cool memory game that was built in Vanilla Javascript.<br/>
+                        In this project, I used DOM and CSS manipulations,
+                        And also using LOCAL STORAGE to save the game results.</p>,
                     }
                 },
                 uxUi:{

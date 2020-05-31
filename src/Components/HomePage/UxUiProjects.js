@@ -14,8 +14,8 @@ import FacebookThammail from "../../Assets/FacebookThammail.png";
 const UxUiProjects = ({uxUiProjectes}) => {
     return(
         <div id={"uxUiProjects"}>
-            <h1 className={"title"} id={"uxUiProjectsTitle"}>{uxUiProjectes.h1Titles.uxUiProjectes}</h1>
             <div id={"projectContainer"}>
+                <h1 className={"title"} id={"uxUiProjectsTitle"}>{uxUiProjectes.h1Titles.uxUiProjectes}</h1>
                 <div className={"designProRight"}>
                     <Project
                         title={uxUiProjectes.projects.uxUi.design1.title}

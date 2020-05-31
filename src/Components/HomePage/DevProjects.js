@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project.js";
 import youtubeThamnail from "../../Assets/youtubeThamnail.jpg";
+import MemoryThamnail from "../../Assets/MemoryThamnail.png";
 import "../HomePage/HomePageCss/DevProjects.css"
 
 const DevProjects = ({devProjects}) => {
@@ -14,6 +15,14 @@ const DevProjects = ({devProjects}) => {
                         description={devProjects.projects.dev.youtube.description}
                         projectImg={youtubeThamnail}
                         thamnail={youtubeThamnail}
+                    />
+                </div>
+                <div className={"designProRight"}>
+                    <Project
+                        title={devProjects.projects.dev.memoryGame.title}
+                        description={devProjects.projects.dev.memoryGame.description}
+                        projectImg={youtubeThamnail}
+                        thamnail={MemoryThamnail}
                     />
                 </div>
             </div>
