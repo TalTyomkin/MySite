@@ -11,7 +11,7 @@
 #projectLink{
     height: 18vw;
     width: 25vw;
-    border: 0.1vw solid rgb(218, 210, 236);
+    border: 0.1vw solid rgb(234, 230, 243);
     border-radius: 50%;
 }
 .projectBtn:hover > #projectLink{
@@ -41,10 +41,9 @@
     position: absolute;
     right: 3%;
 }
+#close:active{
+    outline:none;
+}
 #modalTitle{
     padding-left: 1.5vw;
-}
-#modelBtn{
-    margin-right: 1.5vw;
-    padding: 0.3vw 2vw;
 }

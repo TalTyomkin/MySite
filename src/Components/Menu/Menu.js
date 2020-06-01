@@ -18,14 +18,12 @@ const Menu = (props) => {
                     }else{
                         menuRef.current.classList.remove("menuScrolled")
                     }
-                    console.log("entery",entery)
                 })
         },option);
         
         
         useEffect(() => {
             observer.observe(containerRef.current); 
-            console.log('menu: ', menuRef.current)
         },[])
     return(
         <div ref={containerRef} className={"navContainer"}>

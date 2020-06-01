@@ -17,14 +17,14 @@ const Project = ({title,description,project,thamnail,modalSize, newWindowBtn}) =
                 </div>
             </button>
             <Modal className={"model"} isOpen={modal} toggle={toggle} size={modalSize} returnFocusAfterClose={false} >
-                    <ModalHeader className="modalHeader">
+                    <ModalHeader className="modalHeader" style={{background:"rgb(239, 238, 243)"}}>
                         <span id="modalTitle">{title}</span>
                         <Button id="close" close onClick={toggle} />
                     </ModalHeader>
                     <ModalBody className="modelBody">
                         {project}
                     </ModalBody>
-                    <ModalFooter>
+                    <ModalFooter style={{background:"rgb(239, 238, 243)"}}>
                         {newWindowBtn}
                     </ModalFooter>
             </Modal>
