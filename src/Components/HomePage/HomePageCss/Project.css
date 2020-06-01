@@ -34,3 +34,17 @@
 .projectBtn:active{
     outline:none;
 }
+.modalHeader{
+    position: relative;
+}
+#close{
+    position: absolute;
+    right: 3%;
+}
+#modalTitle{
+    padding-left: 1.5vw;
+}
+#modelBtn{
+    margin-right: 1.5vw;
+    padding: 0.3vw 2vw;
+}

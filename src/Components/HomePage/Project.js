@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 import "../HomePage/HomePageCss/Project.css";
-import { Modal, ModalBody } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter, ModalHeader, Button } from 'reactstrap';
 
-const Project = ({title,description,project,thamnail,modalSize}) => {
+const Project = ({title,description,project,thamnail,modalSize, newWindowBtn}) => {
 
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
@@ -17,9 +17,16 @@ const Project = ({title,description,project,thamnail,modalSize}) => {
                 </div>
             </button>
             <Modal className={"model"} isOpen={modal} toggle={toggle} size={modalSize} returnFocusAfterClose={false} >
-                <ModalBody className={"modelBody"}>
-                    {project}
-                </ModalBody>
+                    <ModalHeader className="modalHeader">
+                        <span id="modalTitle">{title}</span>
+                        <Button id="close" close onClick={toggle} />
+                    </ModalHeader>
+                    <ModalBody className="modelBody">
+                        {project}
+                    </ModalBody>
+                    <ModalFooter>
+                        {newWindowBtn}
+                    </ModalFooter>
             </Modal>
         </div>
     )
