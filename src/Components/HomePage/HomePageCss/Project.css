@@ -37,6 +37,10 @@
 .modalHeader{
     position: relative;
 }
+.modelBody{
+    display: flex;
+    justify-content: center;
+}
 #close{
     position: absolute;
     right: 3%;
