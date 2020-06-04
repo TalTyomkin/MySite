@@ -7,16 +7,16 @@ const Project = ({title,projectUrl,description,project,thamnail,modalSize, newWi
 
     let [modal, setModal] = useState(false);
     let [isLoading, setIsLoading] = useState();
-
-    const loader =  url => {
-        setTimeout(() => {
-            fetch(url, {mode: 'no-cors'})
-            .then(response => response.text())
-            .then(data => data ? JSON.parse(data) : {})
-            .then(data => setIsLoading(data));
-        },1000)
-    }
+    console.log('isLoading',isLoading)
     
+    let loader = async(projectUrl) => {
+        setIsLoading(null);
+        let response = await fetch(projectUrl,{mode: 'no-cors'});
+        let commits = await response.text();
+        setTimeout(() => {
+            setIsLoading(commits ? commits : {})
+        },3000)
+    } 
     const toggle = () => setModal(!modal);
 
     const click = () => {
@@ -24,7 +24,7 @@ const Project = ({title,projectUrl,description,project,thamnail,modalSize, newWi
             toggle();
             setTimeout(() => {
                 setIsLoading({})
-            },1000)
+            },2000)
         } else{
             toggle();
             loader(projectUrl);
@@ -47,6 +47,7 @@ const Project = ({title,projectUrl,description,project,thamnail,modalSize, newWi
                     </ModalHeader>
                     <ModalBody className="modelBody">
                         {!isLoading ? <Loader
+                                        className="loder"
                                         type="Circles"
                                         color="#525062"
                                         height={100}
