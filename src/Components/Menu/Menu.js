@@ -37,7 +37,7 @@ const Menu = (props) => {
                     smooth={true}
                     offset={0}
                     duration= {750}
-                >ABOUT ME</Link>
+                >SO WHO AM I ?</Link>
                 <Link 
                     href={""}
                     className={"menuBtn"}
@@ -67,7 +67,7 @@ const Menu = (props) => {
                     smooth={true}
                     offset={0}
                     duration= {750}
-                >CONTACT</Link>
+                >KEEP IN TOUCH</Link>
             </div>
         </div>
     )

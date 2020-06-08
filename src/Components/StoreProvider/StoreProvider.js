@@ -7,13 +7,12 @@ const StoreProvider = (props) => {
     const [store,setStore] = useState({
         homePage:{
             h1Titles:{
-                aboutMe:"About Me",
+                aboutMe:"The short version...",
                 devProjects:"Dev Projects",
                 uxUiProjectes:"UX UI Projects",
-                contact:"Contact",
+                contact:"Say what's up...",
             },
             aboutMeText:<p id={"text"}>
-                Hi, everyone.<br/>
                 My name is Tal Tyomkin and in the past years I worked as a product designer.<br/>
                 By being a part of the "product" team, I worked alongside developers<br/>
                 and was always curious about learning the code as well.<br/>
