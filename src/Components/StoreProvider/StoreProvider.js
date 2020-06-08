@@ -33,9 +33,9 @@ const StoreProvider = (props) => {
                     },
                     memoryGame:{
                         title:"Cool Memory game",
-                        description:<p>A cool memory game that was built in Vanilla Javascript.<br/>
+                        description:<p>A cool memory game, built in Vanilla Javascript.<br/>
                         In this project, I used DOM and CSS manipulations,
-                        And also using LOCAL STORAGE to save the game results.</p>,
+                        As well as LOCAL STORAGE for saving the game results.</p>,
                     }
                 },
                 uxUi:{
