@@ -13,15 +13,13 @@ const StoreProvider = (props) => {
                 contact:"Say what's up...",
             },
             aboutMeText:<p id={"text"}>
-                My name is Tal Tyomkin and in the past years I worked as a product designer.<br/>
+                In the past years, I worked as a product designer.<br/>
                 By being a part of the "product" team, I worked alongside developers<br/>
                 and was always curious about learning the code as well.<br/>
-                Recently, I've graduated from the "Netcraft Academy" a Front-End developer course,<br/>
-                and now, I can apply my designs as well.<br/>
-                This site is the first of many steps I plan to take in the DEV world.<br/>
-                I've added some designs that I made over the years and<br/>
-                some development projects from the "NetCraft" curriculum.<br/>
-                Planning to add some more over time ...</p>,
+                So, I've graduated "Fullstack" developer course from the "Netcraft Academy",<br/>
+                and today I am looking for new opportunities.<br/>
+                An innovative solution seeker with great communication skills,<br/>
+                not afraid of challenges kinda guy, and a keen eye for detail.</p>,
             projects:{
                 dev:{
                     youtube:{
